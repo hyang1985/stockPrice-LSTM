@@ -21,7 +21,7 @@ import numpy as np
 
 
 
-shIndex=pd.read_csv("C:/Users/yang/Downloads/shIndex.csv")
+shIndex=pd.read_csv("shIndex.csv")
 timeLen=5 #如果分析周期为11，前10个交易日预测下一个交易日
 pos=0
 X=np.zeros((len(shIndex['Close'])-timeLen,timeLen,1),dtype=np.float)
